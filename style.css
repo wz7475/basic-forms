@@ -1,12 +1,52 @@
 body
 {
     background-color: rgb(57, 169, 219);
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 #container
 {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color:rgba(255,255,255,0.9);
     border-radius: 40px;
-    height: 200px;
-    width: 200px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#logo
+{
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    float: left;
+    width: 240px;
+}
+
+#picture
+{
+    float: left;
+    text-align: center;
+    width: 300px;
+}
+
+#line
+{
+    clear: both;
+}
+
+form
+{
+    text-align: center;
+    font-size: 18px;
+}
+
+.question hr
+{
+    width: 15%;
+}
+
+#nfs_label
+{
+    margin-right: 30px;
 }

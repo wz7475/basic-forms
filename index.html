@@ -11,15 +11,55 @@
 
         <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
         <link rel="stylesheet" href="style.css" type="text/css">
-
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="container">
             <div id="logo">
-
+                <h1>Game Blog</h1>
             </div>
+            <div id="picture">
+                <br>
+                <img src="pad.png" alt="pad" height="150px">
+            </div>
+            <div id="line"><hr></div>
             <div id="form">
-                
+                <form action="index.html" method="GET">
+                    <h2>Tell about your preferences!</h2>
+                    <hr>
+                    <section class="question">
+                        <label for="game">What's your favourite game?</label>
+                        <br>
+                        <input type="text" id="game" name="game">
+                        <hr>
+                    </section>
+                    <section class="question">
+                        <label for="amount">How many games do you play simuntaneously?</label>
+                        </br>
+                        <input type="number" min="1" id="amount" name="amount">
+                        <hr>
+                    </section>
+                    <section class="question">
+                        <label for="volumee">How loud do you set soundtrack?</label>
+                        </br>
+                        <span>0</span>
+                        <input type="range" min="0" max="10" step="1" id="volumee" name="volumee" value="0">
+                        <span>10</span>
+                        <hr>
+                    </section>
+                    <section class="question">
+                        <span for="game">Which of these games have you played?</span>
+                        <br>
+                        <input type="checkbox" id="nfs" name="game" checked>
+                        <label id="nfs_label"  for="nfs">Need For Speed</label>
+                        <input type="checkbox" id="fifa" name="game">
+                        <label for="fifa">FIFA</label>
+                        <br>
+                        <input type="checkbox" id="cs" name="game" >
+                        <label for="cs">Counter Strike</label>
+                        <hr>
+                    </section>
+                </form>
             </div>
         </div>
     </body>
