@@ -1,97 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <title>Game blog</title>
+    <meta charset="utf-8">
+    <title>Game blog</title>
 
-        <meta name="describtion" content="describe_here">
-        <meta name="keywords" content="keywords">
+    <meta name="describtion" content="describe_here">
+    <meta name="keywords" content="keywords">
 
-        <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="container">
-            <div id="logo">
-                <h1>Game Blog</h1>
-            </div>
-            <div id="picture">
-                <br>
-                <img src="pad.png" alt="pad" height="150px">
-            </div>
-            <div id="line"><hr></div>
-            <div id="form">
-                <form action="index.html" method="GET">
-                    <h2>Tell about your preferences!</h2>
-                    <hr>
-                    <section class="question">
-                        <label for="game">What's your favourite game?</label>
-                        <br>
-                        <input type="text" id="game" name="game">
-                        <hr>
-                    </section>
-                    <section class="question">
-                        <label for="amount">How many games do you play simuntaneously?</label>
-                        </br>
-                        <input type="number" min="1" id="amount" name="amount">
-                        <hr>
-                    </section>
-                    <section class="question">
-                        <label for="volumee">How loud do you set soundtrack?</label>
-                        </br>
-                        <span>0</span>
-                        <input type="range" min="0" max="10" step="1" id="volumee" name="volumee" value="0">
-                        <span>10</span>
-                        <hr>
-                    </section>
-                    <section class="question">
-                        <span for="game">Which of these games have you played?</span>
-                        <br>
-                        <input type="checkbox" id="nfs" name="game" checked>
-                        <label id="nfs_label"  for="nfs">Need For Speed</label>
-                        <input type="checkbox" id="fifa" name="game">
-                        <label for="fifa">FIFA</label>
-                        <br>
-                        <input type="checkbox" id="cs" name="game" >
-                        <label for="cs">Counter Strike</label>
-                        <hr>
-                    </section>
-                    <section class="question">
-                        <span>Which platform do you prefer?</span>
-                        </br>
-                        <input type="radio" name="platform" id="console" value="console">
-                        <label for="console">Playstation/Xbox</label>
-                        <input type="radio" id="pc" name="platform" value="pc">
-                        <label for="pc">PC</label>
-                        <hr>
-                    </section>
-                    <section class="question">
-                        <label for="type">What's your favourite genre?</label>
-                        <br>
-                        <select name="genre" id="genre">
-                            <option value="fps">FPS</option>
-                            <option value="racing">Racing</option>
-                            <option value="adventure" selected>Adventure</option>
-                        </select>
-                        <hr>
-                    </section>
-                    <section class="question">
-                        <label for="fifa">Which is your favourite FIFA?</label>
-                        <br>
-                        <input list='fifas' id="fifa" name="fifa">
-                        <datalist id="fifas">
-                            <option value="FIFA 10"></option>
-                            <option value="FIFA 15"></option>
-                            <option value="FIFA 20"></option>
-                        </datalist>
-                        <hr>
-                    </section>
-                </form>
-            </div>
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="logo">
+            <h1>Game Blog</h1>
         </div>
-    </body>
+        <div id="picture">
+            <br>
+            <img src="pad.png" alt="pad" height="150px">
+        </div>
+        <div id="line">
+            <hr>
+        </div>
+        <div id="form">
+            <form action="index.html" method="GET">
+                <h2>Tell about your preferences!</h2>
+                <hr>
+                <section class="question">
+                    <label for="game">What's your favourite game?</label>
+                    <br>
+                    <input type="text" id="game" name="game">
+                    <hr>
+                </section>
+                <section class="question">
+                    <label for="amount">How many games do you play simuntaneously?</label>
+                    </br>
+                    <input type="number" min="1" id="amount" name="amount">
+                    <hr>
+                </section>
+                <section class="question">
+                    <label for="volumee">How loud do you set soundtrack?</label>
+                    </br>
+                    <span>0</span>
+                    <input type="range" min="0" max="10" step="1" id="volumee" name="volumee" value="0">
+                    <span>10</span>
+                    <hr>
+                </section>
+                <section class="question">
+                    <span for="game">Which of these games have you played?</span>
+                    <br>
+                    <input type="checkbox" id="nfs" name="game" checked>
+                    <label id="nfs_label" for="nfs">Need For Speed</label>
+                    <input type="checkbox" id="fifa" name="game">
+                    <label for="fifa">FIFA</label>
+                    <br>
+                    <input type="checkbox" id="cs" name="game">
+                    <label for="cs">Counter Strike</label>
+                    <hr>
+                </section>
+                <section class="question">
+                    <span>Which platform do you prefer?</span>
+                    </br>
+                    <input type="radio" name="platform" id="console" value="console">
+                    <label for="console">Playstation/Xbox</label>
+                    <input type="radio" id="pc" name="platform" value="pc">
+                    <label for="pc">PC</label>
+                    <hr>
+                </section>
+                <section class="question">
+                    <label for="type">What's your favourite genre?</label>
+                    <br>
+                    <select name="genre" id="genre">
+                        <option value="fps">FPS</option>
+                        <option value="racing">Racing</option>
+                        <option value="adventure" selected>Adventure</option>
+                    </select>
+                    <hr>
+                </section>
+                <section class="question">
+                    <label for="fifa">Which is your favourite FIFA?</label>
+                    <br>
+                    <input list='fifas' id="fifa" name="fifa">
+                    <datalist id="fifas">
+                        <option value="FIFA 10"></option>
+                        <option value="FIFA 15"></option>
+                        <option value="FIFA 20"></option>
+                    </datalist>
+                    <hr>
+                </section>
+                <section class="question">
+                    <label for="comment">Tell us even more!</label>
+                    <br>
+                    <textarea id="comment" name="comment" rows="5"
+                        cols="60">I started playng games in age ...</textarea>
+                    <hr>
+                </section>
+                <section id="last" class="question">
+                    <input type="submit" value="Send">
+                </section>
+            </form>
+        </div>
+    </div>
+</body>
 
 </html>
